@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="favicon/favicon_io (6)/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hand Made</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <main class="main d-flex">
+        <div class="main__item">
+          <h1 class="main__title">
+            Украшения<br />
+            собственного<br />
+            производства
+          </h1>
+          <p class="main__text">
+            Все изделия создаются с любовью для каждого клиента
+          </p>
+          <a href="#" class="link">Сделать расчет и заказ</a>
+        </div>
+        <div class="main__images d-flex">
+          <div class="big-img">
+            <img src="images/big-img.svg" alt="" />
+          </div>
+          
+          <div class="small-img">
+            <img src="images/small-img.svg" alt="" />
+          </div>
+        </div>
+      </main>
+      <section class="products">
+        <h2 class="title-h2 text-center mb-5">Наши изделия</h2>
+        <div class="grid">
+          <div class="grid__cover">
+            <img src="images/products/01.jpg" alt="">
+          </div>
+          <div class="grid__cover">
+            <img src="images/products/02.jpg" alt="">
+          </div>
+          <div class="grid__cover">
+            <img src="images/products/03.jpg" alt="">
+          </div>
+          <div class="grid__cover">
+            <img src="images/products/04.jpg" alt="">
+          </div>
+        </div>
+        
+      </section>
+      <div class="cost d-flex">
+        <div class="cost__img">
+          <img src="images/cost.svg" alt="">
+        </div>
+        <div class="cost__calc">
+          <form class="form">
+            <p class="form-text">Выберите изделие:</p>
+            <select id="selectProduct" class="form__select">
+              <option value="0">Выбрать из списка</option>
+              <option value="100">Braslet ($100)</option>
+              <option value="90">Ring ($90)</option>
+              <option value="120">Sergi ($120)</option>
+              
+            </select>
+            <p class="form-text">Укажите количество:</p>
+            <input id="quantityProduct" class="form__input" type="number" value="0" min="0">
+            <button class="form-btn" type="button" id="btnProduct">Рассчитать</button>
+          </form>
+          <div id="infoProduct" class="total" style="display: none;">
+            <p class="total__price">Итог: $<span id="priceProduct"></span></p>
+            <p class="total__info">Оставьте заявку по почте:
+              <a href="mailto:order@jewelery.com">
+                order@jewelery.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
